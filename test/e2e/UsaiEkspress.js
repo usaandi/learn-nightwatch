@@ -29,7 +29,9 @@ module.exports= {
     .pause(1000)
     .click('(//a[@class="archive-item issue-downloaded-link lazyload-added"])[3]')
     .pause(1500)
+    .useCss()
     .click('a[class="navigation-arrow-link navigation-arrow-link-right issue-cover2-start-reading"]')
+    .pause(1500)
     .end()
 
 },
@@ -46,7 +48,10 @@ module.exports= {
     .setValue('input[type="text"]','tallinna polütehnikum')
     .pause(2000)
     .click('input[type="submit"')
-    .pause(1000)
+    .pause(2500)
+    .useXpath()
+    .click('(//a[@href="http://ekspress.delfi.ee/erid/see-maagiline-tehnika?id=78258502#keywords=tallinna%20pol%C3%BCtehnikum"])[2]')
+    .pause(2500)
     .end()
 }
 };
